@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="961.0" prefWidth="1303.0" stylesheets="@mainApp/backgroundbig.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller_CovidGeneral">
+   <children>
+      <Label layoutX="1147.0" layoutY="931.0" prefHeight="16.0" prefWidth="142.0" text="suraj-goel" textFill="#58ccd0" />
+      <Label alignment="CENTER" layoutX="412.0" layoutY="98.0" prefHeight="49.0" prefWidth="437.0" text="Covid General Stats" textFill="#bf2525">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="401.0" layoutY="1.0" prefHeight="91.0" prefWidth="502.0" text="hack@home" textAlignment="RIGHT" textFill="#da1313">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="confirmed" alignment="CENTER" editable="false" focusColor="#6880b2" labelFloat="true" layoutX="264.0" layoutY="419.0" prefHeight="33.0" prefWidth="274.0" style="-fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="back" layoutX="324.0" layoutY="829.0" onAction="#onbackclicked" prefHeight="33.0" prefWidth="155.0" style="-fx-background-color: white;" text="Back" textFill="#33bfc6">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <Label fx:id="labelPath" layoutX="26.0" layoutY="308.0" prefHeight="34.0" prefWidth="172.0" text="Total Cases" textFill="#58ccd0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPath1" layoutX="26.0" layoutY="408.0" prefHeight="34.0" prefWidth="109.0" text="Confirmed" textFill="#58ccd0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPath2" layoutX="26.0" layoutY="502.0" prefHeight="34.0" prefWidth="163.0" text="Discharged" textFill="#58ccd0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPath11" layoutX="26.0" layoutY="592.0" prefHeight="34.0" prefWidth="109.0" text="Deaths" textFill="#58ccd0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="total" alignment="CENTER" editable="false" focusColor="#6880b2" labelFloat="true" layoutX="264.0" layoutY="302.0" prefHeight="33.0" prefWidth="274.0" style="-fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="deaths" alignment="CENTER" editable="false" focusColor="#6880b2" labelFloat="true" layoutX="264.0" layoutY="603.0" prefHeight="33.0" prefWidth="274.0" style="-fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="discharged" alignment="CENTER" editable="false" focusColor="#6880b2" labelFloat="true" layoutX="264.0" layoutY="513.0" prefHeight="33.0" prefWidth="274.0" style="-fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="update" layoutX="324.0" layoutY="758.0" onAction="#onupdateclicked" prefHeight="33.0" prefWidth="155.0" style="-fx-background-color: white;" text="update" textFill="#33bfc6">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <Label fx:id="labelPath3" layoutX="858.0" layoutY="290.0" prefHeight="34.0" prefWidth="238.0" text="Total Cases Per State" textFill="#58ccd0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="state" focusColor="#6880b2" labelFloat="true" layoutX="830.0" layoutY="361.0" prefHeight="33.0" prefWidth="317.0" promptText="Enter State" style="-fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="search" layoutX="899.0" layoutY="494.0" onAction="#onsearchclicked" prefHeight="33.0" prefWidth="155.0" style="-fx-background-color: white;" text="search" textFill="#33bfc6">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <JFXTextField fx:id="statelabel" alignment="CENTER" editable="false" focusColor="#6880b2" labelFloat="true" layoutX="840.0" layoutY="432.0" prefHeight="33.0" prefWidth="274.0" style="-fx-prompt-text-fill: WHITE; -fx-text-inner-color: WHITE;" unFocusColor="#5e788a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="81.0" layoutY="208.0" prefHeight="49.0" prefWidth="437.0" text="India Statistics" textFill="#bf2525">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
